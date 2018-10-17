@@ -1,6 +1,9 @@
 def converting(source_num, source_hex, target_hex):
     # （2， 36）之间的进制转换
-    
+    if source_hex > 36 or source_hex < 2:
+        return '2 <= source_hex <= 36'
+    if target_hex > 36 or target_hex < 2:
+        return '2 <= target_hex <= 36'
     str_36 = '0123456789abcdefghijklmnopqrstuvwxyz'
     dict_36 = {}
     for i in range(len(str_36)):
