@@ -1,4 +1,6 @@
 def converting(source_num, source_hex, target_hex):
+    # （2， 36）之间的进制转换
+    
     str_36 = '0123456789abcdefghijklmnopqrstuvwxyz'
     dict_36 = {}
     for i in range(len(str_36)):
