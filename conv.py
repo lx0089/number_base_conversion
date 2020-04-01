@@ -21,4 +21,5 @@ def converting(source_num, source_hex, target_hex):
         result = str_b[remainder] + result
         if quotient_int < target_hex:
             result = str_b[quotient_int] + result
+            break
     return result
